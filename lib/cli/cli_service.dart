@@ -6,12 +6,13 @@ import 'dart:io';
 import 'package:main/bloc/note_bloc.dart';
 import 'package:main/models/note.dart';
 import 'package:main/providers/note_provider.dart';
+import 'package:main/utils/noteObserver.dart';
 
 /// Command-line service for interacting with the NoteBloc.
 ///
-/// Implements the [Observer] interface to listen for changes in the notes
+/// Implements the [NoteObserver] interface to listen for changes in the notes
 /// state.
-class CliService implements Observer {
+class CliService implements NoteObserver {
   /// Initializes a new instance of [CliService] with a given [NoteBloc].
   ///
   /// Subscribes this service as an observer to the [NoteBloc]'s NoteProvider.
