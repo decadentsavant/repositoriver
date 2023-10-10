@@ -1,7 +1,7 @@
 // ignore_for_file: one_member_abstracts
 
 import 'package:main/models/note.dart';
-import 'package:main/utils/noteObserver.dart';
+import 'package:main/utils/note_observer.dart';
 
 /// Manages the state of [Note] instances and notifies registered observers.
 class NoteProvider {

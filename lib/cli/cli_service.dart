@@ -5,8 +5,7 @@ import 'dart:io';
 
 import 'package:main/bloc/note_bloc.dart';
 import 'package:main/models/note.dart';
-import 'package:main/providers/note_provider.dart';
-import 'package:main/utils/noteObserver.dart';
+import 'package:main/utils/note_observer.dart';
 
 /// Command-line service for interacting with the NoteBloc.
 ///
