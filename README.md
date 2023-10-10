@@ -3,7 +3,7 @@
 ## About
 
 This project is a simple command line interface application for managing notes.
-It was designed purely as a playground to practice with different programming paradigms wihtout the clutter of Flutter or abstractions of packages.
+It was designed purely as a playground to practice with different programming paradigms without the clutter of Flutter or abstractions of packages.
 
 -   Observer pattern
 -   Repository pattern
