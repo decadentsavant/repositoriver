@@ -40,8 +40,7 @@ class CliService implements NoteObserver {
         'add' => _addNote(),
         'list' => _listNotes(),
         'delete' => _deleteNote(),
-        // ignore: avoid_redundant_argument_values
-        'quit' => Future.value(null),
+        'quit' => Future.value(Future),
         _ => Future(() {
             print('Unknown command');
           }),
