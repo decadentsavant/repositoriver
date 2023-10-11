@@ -1,7 +1,7 @@
 import 'package:main/bloc/note_bloc.dart';
 import 'package:main/cli/cli_service.dart';
 import 'package:main/providers/note_provider.dart';
-import 'package:main/repositories/file_note_repository.dart';
+import 'package:main/repositories/implementations/file_note_repository.dart';
 
 void main() async {
   // Dependencies
