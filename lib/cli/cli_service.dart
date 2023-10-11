@@ -23,13 +23,9 @@ class CliService implements NoteObserver {
   final NoteBloc noteBloc;
 
   @override
-  void update(List<Note> newState) {
-    print('State updated! Current notes:');
-    for (final note in newState) {
-      print(note);
-    }
-  }
+  void update(List<Note> newState) {}
 
+  
   /// Starts the CLI service, awaiting user input for commands.
   ///
   /// Listens for commands such as 'add', 'list', 'delete', and 'quit'
@@ -63,14 +59,15 @@ class CliService implements NoteObserver {
     print('Enter the note content:');
     final content = stdin.readLineSync();
     await noteBloc.add(Note(id ?? '', content ?? ''));
-    print('Note added.');
+    print('Note successfully added.');
+    await _listNotes();
   }
 
   Future<void> _listNotes() async {
     final notes = noteBloc.noteProvider.getState();
     print('Your notes:');
     for (final note in notes) {
-      print(note);
+      print('${note.id} ${note.content}');
     }
   }
 
@@ -79,5 +76,6 @@ class CliService implements NoteObserver {
     final id = stdin.readLineSync();
     await noteBloc.delete(id ?? '');
     print('Note deleted.');
+    await _listNotes();
   }
 }
