@@ -23,25 +23,25 @@ It was designed purely as a playground to practice with different programming pa
 
 1. Clone the repo
 
-```
+```bash
 git clone https://github.com/decadentsavant/repositoriver
 ```
 
 2. Navigate to project
 
-```
+```bash
 cd repositoriver
 ```
 
 3. Fetch dependencies
 
-```
+```bash
 dart pub get
 ```
 
 4. Run the application
 
-```
+```bash
 dart run
 ```
 

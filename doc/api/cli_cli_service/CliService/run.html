@@ -90,8 +90,7 @@ will keep running until the user inputs 'quit'.</p>
       &#39;add&#39; =&gt; _addNote(),
       &#39;list&#39; =&gt; _listNotes(),
       &#39;delete&#39; =&gt; _deleteNote(),
-      &#47;&#47; ignore: avoid_redundant_argument_values
-      &#39;quit&#39; =&gt; Future.value(null),
+      &#39;quit&#39; =&gt; Future.value(Future),
       _ =&gt; Future(() {
           print(&#39;Unknown command&#39;);
         }),
