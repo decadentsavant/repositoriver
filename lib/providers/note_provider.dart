@@ -5,13 +5,13 @@ import 'package:main/utils/note_observer.dart';
 
 /// Manages the state of [Note] instances and notifies registered observers.
 class NoteProvider {
-  List<Note> _notes = [];
-  final List<NoteObserver> _observers = [];
-
   /// Adds an observer to be notified when the state changes.
   void addObserver(NoteObserver observer) {
     _observers.add(observer);
   }
+  List<Note> _notes = [];
+  final List<NoteObserver> _observers = [];
+
 
   /// Updates the state and notifies all registered observers.
   void setState(List<Note> notes) {
